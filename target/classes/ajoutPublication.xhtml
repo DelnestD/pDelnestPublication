@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:jsf="http://xmlns.jcp.org/jsf" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+
+<title>Publications</title>
+<meta http-equiv="
+	Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Ajout Publication</h1>
+
+	<h:form>
+		<h:inputText title="titre" value="#{publicationControl.titre}"/>
+		<h:inputText title="annee" value="#{publicationControl.annee}"/>
+		<h:inputText title="prix" value="#{publicationControl.prix}"/>
+		<h:commandButton value="ajouter publication" action="#{publicationControl.addPublication()}" />
+		<h:commandButton value="index" action="#{publicationControl.doIndex()}" />
+	</h:form>
+
+
+
+</body>
+</html>

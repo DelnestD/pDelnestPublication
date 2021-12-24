@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:jsf="http://xmlns.jcp.org/jsf" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+
+<title>Publications</title>
+<meta http-equiv="
+	Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Liste Publication</h1>
+	
+	<h:form>
+	<h:commandButton value="index" action="#{publicationControl.doIndex()}" />
+	<h:dataTable value="#{publicationControl.getAllPublications()}" var="p">
+	
+
+        <h:column>
+            <f:facet name="header">titre</f:facet>
+            	#{p.titre}
+                </h:column>
+
+        <h:column>
+            <f:facet name="header">année</f:facet>
+            	#{p.annee}
+                </h:column>
+
+        <h:column>
+            <f:facet name="header">prix</f:facet>
+            	#{p.prix}
+                </h:column>
+        <h:column>
+        	<h:commandButton value="supprimer" action="#{publicationControl.deletePublication(p)}" />
+        		</h:column>
+
+    </h:dataTable>
+	</h:form>
+
+
+</body>
+</html>

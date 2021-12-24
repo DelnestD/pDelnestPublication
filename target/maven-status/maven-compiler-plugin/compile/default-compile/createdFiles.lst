@@ -1,0 +1,10 @@
+be\helha\aemt\entities\Publication_.class
+be\helha\aemt\bug\DebugCDI.class
+be\helha\aemt\control\PublicationControl.class
+be\helha\aemt\entities\Utilisateur.class
+be\helha\aemt\entities\Publication.class
+be\helha\aemt\utils\MainCreationUsers.class
+be\helha\aemt\DAO\UtilisateurDAO.class
+be\helha\aemt\entities\Utilisateur_.class
+be\helha\aemt\EJB\PublicationEJB.class
+be\helha\aemt\DAO\PublicationDAO.class
